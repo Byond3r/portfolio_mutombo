@@ -617,227 +617,352 @@
                 </div>
             </div>
         </div>       
-         <!-- Section des veilles technologiques -->
-        <section class="py-5" id="veilles-technologiques" style="background-color: #000;">
-            <div class="container">
-                <h2 class="text-center mb-5" style="color: #ffffff; text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; font-size: 3rem;">
-                    Veilles technologiques
-                </h2>
-                <p class="text-center mb-4" style="color: #ffffff; font-size: 1.2rem;">
-                    D'après l'ADEME (Agence de L'Environnement Et de la Maitrise Ecologique), l'adoption des technologies vertes pourrait réduire les émissions de CO2 de l'industrie française de 35% d'ici 2030, soulignant l'importance cruciale de la transition écologique dans le secteur technologique.
-                </p>
-                <div id="veillesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                    <div class="carousel-indicators" style="bottom: -50px;">
-                        <button type="button" data-bs-target="#veillesCarousel" data-bs-slide-to="0" class="active" style="background-color: #fff; width: 12px; height: 12px; border-radius: 50%; margin: 0 8px;"></button>
-                        <button type="button" data-bs-target="#veillesCarousel" data-bs-slide-to="1" style="background-color: #fff; width: 12px; height: 12px; border-radius: 50%; margin: 0 8px;"></button>
-                        <button type="button" data-bs-target="#veillesCarousel" data-bs-slide-to="2" style="background-color: #fff; width: 12px; height: 12px; border-radius: 50%; margin: 0 8px;"></button>
-                        <button type="button" data-bs-target="#veillesCarousel" data-bs-slide-to="3" style="background-color: #fff; width: 12px; height: 12px; border-radius: 50%; margin: 0 8px;"></button>
-                        <button type="button" data-bs-target="#veillesCarousel" data-bs-slide-to="4" style="background-color: #fff; width: 12px; height: 12px; border-radius: 50%; margin: 0 8px;"></button>
-                        <button type="button" data-bs-target="#veillesCarousel" data-bs-slide-to="5" style="background-color: #fff; width: 12px; height: 12px; border-radius: 50%; margin: 0 8px;"></button>
+         <!-- Section situation professionnelle -->
+    <section class="py-5" id="situation" style="background-color: #000;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">Situation professionnelle</h2>
+            <div class="row g-4">
+                <!-- Première année -->
+                <div class="col-md-6">
+                    <div class="skill-item" style="border: 2px solid #ffffff; box-shadow: 0 0 10px #ffffff; padding: 20px; border-radius: 10px; background-color: #1a1a1a;">
+                        <i class="fas fa-graduation-cap skill-icon" style="color: #ffffff; text-shadow: 0 0 10px #ffffff;"></i>
+                        <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">1ère année</h4>
+                        <div class="situation-content">
+                            <!-- Accordéon des situations -->
+                            <div class="accordion" id="accordionFirstYear">
+                                <!-- Situation 1 -->
+                                <div class="accordion-item" style="background-color: #1a1a1a; border: 1px solid #ffffff;">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#situation1Year1" style="background-color: #1a1a1a; color: #ffffff;">
+                                            Mise en place d'un Hyperviseur - Developpement
+                                        </button>
+                                    </h2>
+                                    <div id="situation1Year1" class="accordion-collapse collapse" data-bs-parent="#accordionFirstYear">
+                                        <div class="accordion-body text-light">
+                                            <h5 style="color: #ffffff;">Contexte</h5>
+                                            <p>Stage réalisé au département robotique de CPE Lyon sous la supervision de Raphael Leber (prof robotique) et Thibault Baniol (admin réseau).</p>
+                                            <h6 style="color: #ffffff;">Environnement technologique</h6>
+                                            <p>Proxmox, Noyaux Debian, serveur dédié (pc master), et de pcs portables de test</p>
+                                            <h6 style="color: #ffffff;">Objectif de la mission</h6>
+                                            <p>
+                                                1. Analyser et comparer les hyperviseurs du marché<br>
+                                                2. Déployer et configurer la solution choisie pour les besoins en IA et robotique
+                                            </p>
+                                            <h6 style="color: #ffffff;">Réalisation</h6>
+                                            <ul>
+                                                <li>Mise en place de l'environnement de test sur PC fixe sous Kubuntu 22.04</li>
+                                                <li>Installation et configuration de Proxmox</li>
+                                                <li>Déploiement des VMs et installation des outils d'IA</li>
+                                            </ul>
+                                            <h6 style="color: #ffffff;">Bilan</h6>
+                                            <p>Acquisition de compétences en virtualisation, IA et gestion de projet via Gitlab.</p>
+                                            <!-- Image du projet -->
+                                            <img src="assets/img/proxmox.png" class="img-fluid mb-3" alt="Déploiement Proxmox">
+                                            <a href="https://sioljb2-my.sharepoint.com/:f:/g/personal/mutombo_gregory_sio-ljb_com/Egd9SWuWDSpCpatQbM7o8yABv_D2zDNhQCkPHoqhKaffIg?e=zULQhr" class="btn btn-light">Tout les documents associées à cette SP</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Situation 2 -->
+                                <div class="accordion-item" style="background-color: #1a1a1a; border: 1px solid #ffffff;">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#situation2Year1" style="background-color: #1a1a1a; color: #ffffff;">
+                                            Réinstallation OS - RoboCup - Réseaux 
+                                        </button>
+                                    </h2>
+                                    <div id="situation2Year1" class="accordion-collapse collapse" data-bs-parent="#accordionFirstYear">
+                                        <div class="accordion-body text-light">
+                                            <h5 style="color: #ffffff;">Contexte</h5>
+                                            <p>Stage au département robotique de CPE Lyon pour préparer les ordinateurs portables destinés à la compétition RoboCup.</p>
+                                            <h6 style="color: #ffffff;">Objectif de la mission</h6>
+                                            <p>Réinstaller et configurer les systèmes d'exploitation sur un parc d'ordinateurs portables pour les rendre opérationnels lors de la RoboCup.</p>
+                                            <h6 style="color: #ffffff;">Réalisation</h6>
+                                            <p>Création d'images système personnalisées, déploiement des OS, installation des logiciels spécifiques à la robotique, tests de fonctionnement.</p>
+                                            <h6 style="color: #ffffff;">Environnement technologique</h6>
+                                            <p>Ubuntu 24.04 avec les outils logiciels nécessaires , Clonezilla , ordinateur portable</p>
+                                            <h6 style="color: #ffffff;">Bilan</h6>
+                                            <p>Cette mission m'a permis d'acquérir des compétences en déploiement système à grande échelle et en configuration d'environnements spécifiques pour la robotique.</p>
+                                            <!-- Image du projet -->
+                                             <img src="assets/img/roboCup.png" class="img-fluid mb-3" alt="Déploiement Clonezilla">
+                                             <a href="https://sioljb2-my.sharepoint.com/:f:/g/personal/mutombo_gregory_sio-ljb_com/EvhyvFN0NFVMuH3lL26r2jcBbj_aklVI9_-bBbLogGDj7A?e=16R64x" class="btn btn-light">Tout les documents associées à cette SP</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Contenu du carrousel -->
-                    <div class="carousel-inner">
-    <!-- Slide 1 - Impact environnemental -->
-    <div class="carousel-item active">
-        <div class="skill-item" style="border: 2px solid #ffffff; box-shadow: 0 0 10px #ffffff; padding: 20px; border-radius: 10px;">
-            <i class="fas fa-leaf skill-icon" style="color: #ffffff; text-shadow: 0 0 10px #ffffff;"></i>
-            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">Technologies vertes</h4>
-            <div class="veilles-content">
-                <p style="color: #fff;">
-                    Technologies innovantes permettant de réduire l'empreinte écologique des processus industriels et numériques.
-                </p>
-                <h6 style="color: #ffffff;">Article</h6>
-                <ul style="color: #fff;">
-                    <li>Nom de l'article: Technologies vertes : zoom sur les innovations qui changent la donne en matière d'environnement</li>
-                    <li>Auteur: La Relève et La Peste</li>
-                    <li>Date: 13 septembre 2024</li>
-                </ul>
-                <a href="https://www.lareleve.qc.ca/2024/09/13/technologies-vertes-zoom-sur-les-innovations-qui-changent-la-donne-en-matiere-denvironnement/" class="btn btn-light">Voir plus de détails</a>
-            </div>
-        </div>
-    </div>
-    <!-- Slide 2 - Technologies vertes -->
-<div class="carousel-item">
-    <div class="skill-item" style="border: 2px solid #ffffff; box-shadow: 0 0 10px #ffffff; padding: 20px; border-radius: 10px;">
-        <i class="fas fa-solar-panel skill-icon" style="color: #ffffff; text-shadow: 0 0 10px #ffffff;"></i>
-        <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">Mobilisation des étudiants pour les enjeux climatiques</h4>
-        <div class="veilles-content">
-            <p style="color: #fff;">
-                L'ADEME engage les étudiants de Bordeaux dans des projets pour la transition énergétique et la lutte contre le changement climatique.
-            </p>
-            <h6 style="color: #ffffff;">Objectifs</h6>
-            <ul style="color: #fff;">
-                <li>Sensibilisation aux enjeux écologiques</li>
-                <li>Collaboration avec les entreprises locales</li>
-                <li>Innover pour réduire l'empreinte carbone</li>
-            </ul>
-            <!--date et lien vers l'article-->
-            <h6 style="color: #ffffff;">Date</h6>
-            <p style="color: #fff;">Date: 01 octobre 2024</p>
-            <a href="https://www.letudiant.fr/metiers/a-bordeaux-lademe-mobilise-les-etudiants-sur-les-enjeux-du-climat.html" class="btn btn-light" target="_blank">Voir plus de détails</a>
-        </div>
-    </div>
-</div>
-    <!-- Slide 3 - Article sur la décarbonation industrielle -->
-    <div class="carousel-item">
-        <div class="skill-item" style="border: 2px solid #ffffff; box-shadow: 0 0 10px #ffffff; padding: 20px; border-radius: 10px;">
-            <i class="fas fa-industry skill-icon" style="color: #ffffff; text-shadow: 0 0 10px #ffffff;"></i>
-            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">Décarbonation de l'industrie</h4>
-            <div class="veilles-content">
-                <p style="color: #fff;">
-                    Innovations visant à réduire l'impact carbone de l'industrie, telles que l'hydrogène bas carbone et l'électrification.
-                </p>
-                <h6 style="color: #ffffff;">Article</h6>
-                <ul style="color: #fff;">
-                    <li>Nom de l'article: Décarbonation de l'industrie : plus qu'un enjeu climatique</li>
-                    <li>Auteur: ADEME</li>
-                    <li>Date: 1er décembre 2024</li>
-                </ul>
-                <a href="https://infos.ademe.fr/industrie-production-durable/2024/decarbonation-de-lindustrie-plus-quun-enjeu-climatique/?" class="btn btn-light">Voir plus de détails</a>
-            </div>
-        </div>
-    </div>
-    <!-- Slide 4 - Article sur les initiatives environnementales -->
-    <div class="carousel-item">
-        <div class="skill-item" style="border: 2px solid #ffffff; box-shadow: 0 0 10px #ffffff; padding: 20px; border-radius: 10px;">
-            <i class="fas fa-globe skill-icon" style="color: #ffffff; text-shadow: 0 0 10px #ffffff;"></i>
-            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">Initiatives environnementales</h4>
-            <div class="veilles-content">
-                <p style="color: #fff;">
-                    Remplacer les processus industriels polluants par des alternatives durables, favorisant la collaboration circulaire.
-                </p>
-                <h6 style="color: #ffffff;">Article</h6>
-                <ul style="color: #fff;">
-                    <li>Nom de l'article: Une nouvelle initiative vise à réduire l'impact environnemental des processus industriels</li>
-                    <li>Auteur: Programme des Nations Unies pour l'environnement ( ONU )</li>
-                    <li>Date: 14 décembre 2024</li>
-                </ul>
-                <a href="https://www.unep.org/fr/actualites-et-recits/communique-de-presse/une-nouvelle-initiative-vise-reduire-limpact?utm_source=chatgpt.com" class="btn btn-light">Voir plus de détails</a>
-            </div>
-        </div>
-    </div>
-    <!-- Slide 5 - initiatives de développement durable -->
-    <div class="carousel-item">
-        <div class="skill-item" style="border: 2px solid #ffffff; box-shadow: 0 0 10px #ffffff; padding: 20px; border-radius: 10px;">
-            <i class="fas fa-leaf skill-icon" style="color: #ffffff; text-shadow: 0 0 10px #ffffff;"></i>
-            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">l'hydrogène-energie du futur ?</h4>
-            <div class="veilles-content">
-                <p style="color: #fff;">
-                    Innovations et creation de nouvelles sources d'énergie renouvelable.
-                </p>
-                <h6 style="color: #ffffff;">techniques-ingenieur</h6>
-                <ul style="color: #fff;">
-                    <li>Nom de l'article: France 2030 : l'hydrogène à l'heure des choix</li>
-                    <li>Auteur: Pierre Thouverez</li>
-                    <li>Date: 26 mars 2025</li>
-                </ul>
-                <a href="https://www.techniques-ingenieur.fr/actualite/articles/france-2030-lhydrogene-a-lheure-des-choix-144004/" class="btn btn-light">Voir plus de détails</a>
-            </div>
-        </div>
-    </div>
-    <!-- Slide 6 - Article sur l'IA et l'écologie -->
-    <div class="carousel-item">
-        <div class="skill-item" style="border: 2px solid #ffffff; box-shadow: 0 0 10px #ffffff; padding: 20px; border-radius: 10px;">
-            <i class="fas fa-robot skill-icon" style="color: #ffffff; text-shadow: 0 0 10px #ffffff;"></i>
-            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">IA et écologie</h4>
-            <div class="veilles-content">
-                <p style="color: #fff;">
-                    L'IA au service de la préservation de l'environnement : analyse des sols et gestion des risques climatiques.
-                </p>
-                <h6 style="color: #ffffff;">Article</h6>
-                <ul style="color: #fff;">
-                    <li>Nom de l'article: IA et écologie : 6 projets qui permettent de mieux protéger l'environnement</li>
-                    <li>Auteur: Notre Environnement</li>
-                    <li>Date: 3 janvier 2025</li>
-                </ul>
-                <a href="https://www.notre-environnement.gouv.fr/actualites/breves/article/ia-et-ecologie-6-projets-qui-permettent-de-mieux-proteger-l-environnement?" class="btn btn-light">Voir plus de détails</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#veillesCarousel" data-bs-slide="prev" style="width: 5%; opacity: 1;">
-                        <span class="carousel-control-prev-icon" style="background-color: rgba(255,255,255,0.3); padding: 30px; border-radius: 50%;"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#veillesCarousel" data-bs-slide="next" style="width: 5%; opacity: 1;">
-                        <span class="carousel-control-next-icon" style="background-color: rgba(255,255,255,0.3); padding: 30px; border-radius: 50%;"></span>
-                    </button>
                 </div>
-            </div>
-            <style>
-                .skill-item {
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    margin: 20px;
-                    background: rgba(26, 26, 26, 0.9);
-                }
-                .skill-item:hover {
-                    transform: translateY(-10px);
-                    box-shadow: 0 0 20px #ffffff !important;
-                }
-                .skill-icon {
-                    font-size: 3rem;
-                    margin-bottom: 20px;
-                    display: block;
-                    text-align: center;
-                }
-                .carousel-item .btn {
-                    transition: all 0.3s ease;
-                    margin-top: 15px;
-                }
-                .carousel-item .btn:hover {
-                    transform: scale(1.05);
-                    box-shadow: 0 0 15px rgba(255,255,255,0.5);
-                }
-                .veilles-content {
-                    padding: 20px;
-                }
-                .veilles-content ul {
-                    list-style-type: none;
-                    padding-left: 0;
-                }
-                .veilles-content ul li {
-                    margin-bottom: 10px;
-                    padding-left: 20px;
-                    position: relative;
-                }
-                .veilles-content ul li:before {
-                    content: "•";
-                    position: absolute;
-                    left: 0;
-                    color: #ffffff;
-                }
-            </style>
-        </section>
-
-    </section>        <!-- Section de contact -->
-        <section class="contact-section" id="contact">        
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <!-- Formulaire de contact -->
-                        <div class="contact-form">
-                            <h2 class="text-center text-light mb-4">Contactez-moi</h2>
-                            <form action="mailto:votre-email@example.com" method="POST" enctype="text/plain">
-                                <!-- Champs du formulaire -->
-                                <div class="mb-3">
-                                    <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
+                <div class="col-md-6">
+                    <div class="skill-item" style="border: 2px solid #ffffff; box-shadow: 0 0 10px #ffffff; padding: 20px; border-radius: 10px;">
+                        <i class="fas fa-graduation-cap skill-icon" style="color: #ffffff; text-shadow: 0 0 10px #ffffff;"></i>
+                        <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">2ème année</h4>
+                        <div class="accordion" id="accordionSecondYear">
+                            <div class="accordion-item" style="background-color: #1a1a1a; border: 1px solid #ffffff;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#situation1Year2" style="background-color: #1a1a1a; color: #ffffff;">
+                                        Système de Gestion de Restaurant Compelet (SGRC)
+                                    </button>
+                                </h2>
+                                <div id="situation1Year2" class="accordion-collapse collapse" data-bs-parent="#accordionSecondYear">
+                                    <div class="accordion-body text-light">
+                                        <h5 style="color: #ffffff;">Contexte</h5>
+                                        <p>Projet collaboratif entre le lycée Hélène Boucher et les élèves de 2ème année SLAM du lycée Jacques Brel pour développer un système de gestion de restauration.</p>
+                                        <h6 style="color: #ffffff;">Objectif de la mission</h6>
+                                        <p>Concevoir et développer une application de gestion pour le restaurant d'application du lycée Hélène Boucher afin de facilité et automatisé leur travail (prise de commande , gestion des plats , historiques des commandes passés etc..).</p>
+                                        <h6 style="color: #ffffff;">Réalisation</h6>
+                                        <p>- Analyse des besoins avec les utilisateurs (élèves de chez hélène bouchée)<br>
+                                           - Amélioration de l'interface et des options logiciel<br>
+                                           - Développement des fonctionnalités de gestion des réservations<br>
+                                        <h6 style="color: #ffffff;">Environnement technologique</h6>
+                                        <p>PHP, MySQL, HTML/CSS, JavaScript, Framework Bootstrap</p>
+                                        <h6 style="color: #ffffff;">Bilan</h6>
+                                        <p>Ce projet m'a permis de développer mes compétences en gestion de projet, travail collaboratif et développement d'applications métier.</p>
+                                        <a href="https://drive.google.com/drive/folders/1895qN3V32AojDeOfUQxofyjkyro8M7qu?usp=sharing" class="btn btn-light">Lien direct a la production</a>
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <input type="email" name="email" class="form-control" placeholder="Votre email" required>
+                            </div>
+                            <div class="accordion-item" style="background-color: #1a1a1a; border: 1px solid #ffffff;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#situation2Year2" style="background-color: #1a1a1a; color: #ffffff;">
+                                        Projet CPEAPP Template
+                                    </button>
+                                </h2>
+                                <div id="situation2Year2" class="accordion-collapse collapse" data-bs-parent="#accordionSecondYear">
+                                    <div class="accordion-body text-light">
+                                        <h5 style="color: #ffffff;">Contexte</h5>
+                                        <p>Repondre au besoins de client CPE sans budget (associations , hopitaux etc...)</p>
+                                        <h6 style="color: #ffffff;">Objectif de la mission</h6>
+                                        <p>Développer une application mobile generique avec les fonction de base.</p>
+                                        <h6 style="color: #ffffff;">Réalisation</h6>
+                                        <p>- Prise en compte des besoins des clients de cpe <br>
+                                           - Intégration des contenus et pages de connexion<br>
+                                           - Menu lateral et amelioration de l'ergonomie<br>
+                                        <h6 style="color: #ffffff;">Environnement technologique</h6>
+                                        <p>Android Studio , Flutter , Dart , Google Firebase </p>
+                                        <h6 style="color: #ffffff;">Bilan</h6>
+                                        <p>Ce projet m'a permis de mettre en pratique mes compétences en développement mobile et en design d'interface utilisateur.</p>
+                                        <img src="assets/img/Flutter.png" class="img-fluid mb-3" alt="Flutter">
+                                             <a href="https://drive.google.com/drive/folders/1895qN3V32AojDeOfUQxofyjkyro8M7qu?usp=sharing" class="btn btn-light">Tout les documents associées à cette SP</a>
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <textarea name="message" class="form-control" rows="5" placeholder="Votre message" required></textarea>
+                            </div>
+                            <!-- Situation 3 -->
+                            <div class="accordion-item" style="background-color: #1a1a1a; border: 1px solid #ffffff;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#situation3Year2" style="background-color: #1a1a1a; color: #ffffff;">
+                                        Réinstallation OS - Création d'un support de sauvegarde d'OS - Réseaux 
+                                    </button>
+                                </h2>
+                                <div id="situation3Year2" class="accordion-collapse collapse" data-bs-parent="#accordionSecondYear">
+                                    <div class="accordion-body text-light">
+                                        <h5 style="color: #ffffff;">Contexte</h5>
+                                        <p>Stage au département robotique de CPE Lyon pour préparer les ordinateurs portables destinés à la compétition RoboCup.</p>
+                                        <h6 style="color: #ffffff;">Objectif de la mission</h6>
+                                        <p>Réinstaller et configurer les systèmes d'exploitation sur un parc d'ordinateurs portables pour les rendre opérationnels lors de la RoboCup.</p>
+                                        <h6 style="color: #ffffff;">Réalisation</h6>
+                                        <p>Création d'images système personnalisées, déploiement des OS, installation des logiciels spécifiques à la robotique, tests de fonctionnement.</p>
+                                        <h6 style="color: #ffffff;">Environnement technologique</h6>
+                                        <p>Ubuntu 24.04 avec les outils logiciels nécessaires , Clonezilla , ordinateur portable</p>
+                                        <h6 style="color: #ffffff;">Bilan</h6>
+                                        <p>Cette mission m'a permis d'acquérir des compétences en déploiement système à grande échelle et en configuration d'environnements spécifiques pour la robotique.</p>
+                                        <!-- Image du projet -->
+                                         <img src="assets/img/OIP.jpg" class="img-fluid mb-3" alt="Déploiement Clonezilla">
+                                         <a href="https://sioljb2-my.sharepoint.com/:f:/g/personal/mutombo_gregory_sio-ljb_com/EvhyvFN0NFVMuH3lL26r2jcBbj_aklVI9_-bBbLogGDj7A?e=16R64x" class="btn btn-light">Tout les documents associées à cette SP</a>
+                                    </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Envoyer</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>       
+         <!-- Section des veilles technologiques -->
+        <section class="py-5" id="veilles-technologiques" style="background-color: #000;">
+            <div class="container">
+                <h2 class="text-center mb-5" style="color: #ffffff; font-size: 3.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(255,255,255,0.3);">
+                    Veilles technologiques
+                </h2>
+                <p class="text-center mb-5" style="color: #ffffff; font-size: 1.4rem; line-height: 1.8; max-width: 800px; margin: 0 auto; font-style: italic; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                    D'après l'ADEME (Agence de L'Environnement Et de la Maitrise Ecologique), l'adoption des technologies vertes pourrait réduire les émissions de CO2 de l'industrie française de 35% d'ici 2030, soulignant l'importance cruciale de la transition écologique dans le secteur technologique.
+                </p>
+                <div class="row">
+                    <!-- Article 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="skill-item h-100" style="border: 2px solid #ffffff; box-shadow: 0 0 30px rgba(255,255,255,0.3); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); background: linear-gradient(145deg, rgba(26,26,26,0.9), rgba(26,26,26,0.7));">
+                            <i class="fas fa-leaf skill-icon" style="color: #4CAF50; text-shadow: 0 0 15px #4CAF50; font-size: 5rem; margin-bottom: 30px;"></i>
+                            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff; font-size: 2.2rem; margin-bottom: 25px; letter-spacing: 1px;">Technologies vertes</h4>
+                            <p style="color: #fff; font-size: 1.3rem; line-height: 1.8; margin-bottom: 25px;">
+                                Technologies innovantes permettant de réduire l'empreinte écologique des processus industriels et numériques.
+                            </p>
+                            <h6 style="color: #ffffff; font-size: 1.4rem; margin-top: 25px;">Article</h6>
+                            <ul style="color: #fff; font-size: 1.2rem; list-style: none; padding: 0;">
+                                <li class="mb-3">Technologies vertes : zoom sur les innovations</li>
+                                <li class="mb-3">Auteur: La Relève et La Peste</li>
+                                <li class="mb-3">Date: 13 septembre 2024</li>
+                            </ul>
+                            <a href="https://www.lareleve.qc.ca/2024/09/13/technologies-vertes-zoom-sur-les-innovations-qui-changent-la-donne-en-matiere-denvironnement/" 
+                               class="btn btn-light btn-lg mt-4" 
+                               style="font-weight: bold; transition: all 0.3s ease; width: 100%;">
+                                Lire l'article
+                            </a>
+                        </div>
+                    </div>
 
-    <!-- Inclusion de Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+                    <!-- Article 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="skill-item h-100" style="border: 2px solid #ffffff; box-shadow: 0 0 30px rgba(255,255,255,0.3); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); background: linear-gradient(145deg, rgba(26,26,26,0.9), rgba(26,26,26,0.7));">
+                            <i class="fas fa-solar-panel skill-icon" style="color: #ffffff; text-shadow: 0 0 15px #ffffff; font-size: 4rem;"></i>
+                            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff; font-size: 2rem; margin-bottom: 20px;">Mobilisation étudiante</h4>
+                            <p style="color: #fff; font-size: 1.2rem; line-height: 1.6;">
+                                L'ADEME engage les étudiants de Bordeaux dans des projets pour la transition énergétique.
+                            </p>
+                            <h6 style="color: #ffffff; font-size: 1.3rem; margin-top: 20px;">Article</h6>
+                            <ul style="color: #fff; font-size: 1.1rem; list-style: none; padding: 0;">
+                                <li class="mb-3">Mobilisation des étudiants pour le climat</li>
+                                <li class="mb-3">Auteur: L'Étudiant</li>
+                                <li class="mb-3">Date: 01 octobre 2024</li>
+                            </ul>
+                            <a href="https://www.letudiant.fr/metiers/a-bordeaux-lademe-mobilise-les-etudiants-sur-les-enjeux-du-climat.html" 
+                               class="btn btn-light btn-lg mt-4" 
+                               style="font-weight: bold; transition: all 0.3s ease; width: 100%;">
+                                Lire l'article
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="skill-item h-100" style="border: 2px solid #ffffff; box-shadow: 0 0 30px rgba(255,255,255,0.3); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); background: linear-gradient(145deg, rgba(26,26,26,0.9), rgba(26,26,26,0.7));">
+                            <i class="fas fa-industry skill-icon" style="color: #ffffff; text-shadow: 0 0 15px #ffffff; font-size: 4rem;"></i>
+                            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff; font-size: 2rem; margin-bottom: 20px;">Décarbonation industrielle</h4>
+                            <p style="color: #fff; font-size: 1.2rem; line-height: 1.6;">
+                                Innovations pour réduire l'impact carbone de l'industrie.
+                            </p>
+                            <h6 style="color: #ffffff; font-size: 1.3rem; margin-top: 20px;">Article</h6>
+                            <ul style="color: #fff; font-size: 1.1rem; list-style: none; padding: 0;">
+                                <li class="mb-3">Décarbonation de l'industrie</li>
+                                <li class="mb-3">Auteur: ADEME</li>
+                                <li class="mb-3">Date: 1er décembre 2024</li>
+                            </ul>
+                            <a href="https://infos.ademe.fr/industrie-production-durable/2024/decarbonation-de-lindustrie-plus-quun-enjeu-climatique/?" 
+                               class="btn btn-light btn-lg mt-4" 
+                               style="font-weight: bold; transition: all 0.3s ease; width: 100%;">
+                                Lire l'article
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="skill-item h-100" style="border: 2px solid #ffffff; box-shadow: 0 0 30px rgba(255,255,255,0.3); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); background: linear-gradient(145deg, rgba(26,26,26,0.9), rgba(26,26,26,0.7));">
+                            <i class="fas fa-globe skill-icon" style="color: #ffffff; text-shadow: 0 0 15px #ffffff; font-size: 4rem;"></i>
+                            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff; font-size: 2rem; margin-bottom: 20px;">Initiatives environnementales</h4>
+                            <p style="color: #fff; font-size: 1.2rem; line-height: 1.6;">
+                                Alternatives durables pour l'industrie.
+                            </p>
+                            <h6 style="color: #ffffff; font-size: 1.3rem; margin-top: 20px;">Article</h6>
+                            <ul style="color: #fff; font-size: 1.1rem; list-style: none; padding: 0;">
+                                <li class="mb-3">Impact environnemental industriel</li>
+                                <li class="mb-3">Auteur: ONU Environnement</li>
+                                <li class="mb-3">Date: 14 décembre 2024</li>
+                            </ul>
+                            <a href="https://www.unep.org/fr/actualites-et-recits/communique-de-presse/une-nouvelle-initiative-vise-reduire-limpact" 
+                               class="btn btn-light btn-lg mt-4" 
+                               style="font-weight: bold; transition: all 0.3s ease; width: 100%;">
+                                Lire l'article
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="skill-item h-100" style="border: 2px solid #ffffff; box-shadow: 0 0 30px rgba(255,255,255,0.3); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); background: linear-gradient(145deg, rgba(26,26,26,0.9), rgba(26,26,26,0.7));">
+                            <i class="fas fa-robot skill-icon" style="color: #ffffff; text-shadow: 0 0 15px #ffffff; font-size: 4rem;"></i>
+                            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff; font-size: 2rem; margin-bottom: 20px;">IA et écologie</h4>
+                            <p style="color: #fff; font-size: 1.2rem; line-height: 1.6;">
+                                L'IA au service de l'environnement.
+                            </p>
+                            <h6 style="color: #ffffff; font-size: 1.3rem; margin-top: 20px;">Article</h6>
+                            <ul style="color: #fff; font-size: 1.1rem; list-style: none; padding: 0;">
+                                <li class="mb-3">IA et écologie : 6 projets innovants</li>
+                                <li class="mb-3">Auteur: Notre Environnement</li>
+                                <li class="mb-3">Date: 3 janvier 2025</li>
+                            </ul>
+                            <a href="https://www.notre-environnement.gouv.fr/actualites/breves/article/ia-et-ecologie-6-projets-qui-permettent-de-mieux-proteger-l-environnement?" 
+                               class="btn btn-light btn-lg mt-4" 
+                               style="font-weight: bold; transition: all 0.3s ease; width: 100%;">
+                                Lire l'article
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Article 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="skill-item h-100" style="border: 2px solid #ffffff; box-shadow: 0 0 30px rgba(255,255,255,0.3); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); background: linear-gradient(145deg, rgba(26,26,26,0.9), rgba(26,26,26,0.7));">
+                            <i class="fas fa-leaf skill-icon" style="color: #ffffff; text-shadow: 0 0 15px #ffffff; font-size: 4rem;"></i>
+                            <h4 style="color: #ffffff; text-shadow: 0 0 10px #ffffff; font-size: 2rem; margin-bottom: 20px;">L'hydrogène du futur</h4>
+                            <p style="color: #fff; font-size: 1.2rem; line-height: 1.6;">
+                                Nouvelles sources d'énergie renouvelable.
+                            </p>
+                            <h6 style="color: #ffffff; font-size: 1.3rem; margin-top: 20px;">Article</h6>
+                            <ul style="color: #fff; font-size: 1.1rem; list-style: none; padding: 0;">
+                                <li class="mb-3">France 2030 : l'hydrogène</li>
+                                <li class="mb-3">Auteur: Pierre Thouverez</li>
+                                <li class="mb-3">Date: 26 mars 2025</li>
+                            </ul>
+                            <a href="https://www.techniques-ingenieur.fr/actualite/articles/france-2030-lhydrogene-a-lheure-des-choix-144004/" 
+                               class="btn btn-light btn-lg mt-4" 
+                               style="font-weight: bold; transition: all 0.3s ease; width: 100%;">
+                                Lire l'article
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>    
+<!-- Contact Section -->
+<section class="resume-section" id="contact">
+    <div class="resume-section-content">
+        <div style="height: 50px;"></div>
+        <h2 class="mb-5" style="color: #ffffff; text-align: center;">Contact</h2>
+        <div class="contact-container" style="max-width: 800px; margin: 0 auto;">
+            <form action="mailto:mutombogregory77@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+                <div class="form-group mb-4">
+                    <label for="name" style="color: #ffffff;">Nom</label>
+                    <input type="text" class="form-control" id="name" name="name" required style="background: rgba(255, 255, 255, 0.1); color: #ffffff; border: 1px solid #ffffff;">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="email" style="color: #ffffff;">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required style="background: rgba(255, 255, 255, 0.1); color: #ffffff; border: 1px solid #ffffff;">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="message" style="color: #ffffff;">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required style="background: rgba(255, 255, 255, 0.1); color: #ffffff; border: 1px solid #ffffff;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light btn-lg" style="font-weight: bold; transition: all 0.3s ease;">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    <style>
+        .contact-form input,
+        .contact-form textarea {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        
+        .contact-form button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+        
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</section>
